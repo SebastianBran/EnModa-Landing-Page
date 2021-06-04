@@ -1,0 +1,198 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* HEADER */
+
+/* HERO PAGE */
+
+/* ¿POR QUE ELEGIR ENMODA? */
+
+/* NOSOTROS */
+
+/* COMO FUNCIONA */
+
+#como_funciona { 
+    max-width: 1440px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#como_funciona_container {
+    width: 83.333333%;
+    height: 373px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-areas: "titulo"
+                         "pasos";
+    grid-template-rows: 104px 269px;
+}
+
+#como_funciona_title { grid-area: titulo; }
+
+#como_funciona_title > p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+#como_funciona_pasos {
+    grid-area: pasos;
+    display: flex;
+    justify-content: space-between;
+}
+
+#como_funciona_registrate,
+#como_funciona_busca,
+#como_funciona_compra,
+#como_funciona_recibe {
+    height: 269px;
+    width: 240px;
+    float: left;
+}
+
+#como_funciona_registrate_paso,
+#como_funciona_busca_paso,
+#como_funciona_compra_paso,
+#como_funciona_recibe_paso {
+    background: rgba(31, 31, 31, 0.92);
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+#como_funciona_registrate_paso > p,
+#como_funciona_busca_paso > p,
+#como_funciona_compra_paso > p,
+#como_funciona_recibe_paso > p {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+}
+
+#como_funciona_registrate,
+#como_funciona_compra {
+    display: grid;
+    grid-template-areas: "foto"
+                         "paso";
+    grid-template-rows: 214px 55px;    
+}
+
+#como_funciona_busca,
+#como_funciona_recibe {
+    display: grid;
+    grid-template-areas: "paso"
+                         "foto";
+    grid-template-rows: 55px 214px;    
+}
+
+#como_funciona_registrate_foto { background-image: url(../img/como-funciona-registrate.png); }
+#como_funciona_busca_foto { background-image: url(../img/como-funciona-busca.png); }
+#como_funciona_compra_foto { background-image: url(../img/como-funciona-compra.png); }
+#como_funciona_recibe_foto { background-image: url(../img/como-funciona-recibe.png); }
+
+@media (max-width: 1160px) {
+    #como_funciona { 
+        height: 800px;
+    }
+    
+    #como_funciona_container {
+        height: 667px;
+        grid-template-rows: 104px 563px;
+    }
+
+    #como_funciona_pasos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 25px;
+    }
+
+    #como_funciona_registrate,
+    #como_funciona_busca,
+    #como_funciona_compra,
+    #como_funciona_recibe {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #como_funciona { height: 800px; }
+
+    #como_funciona_container {
+        width: 89.333333%;
+        height: 740px;
+        grid-template-rows: 40px 700px;
+    }
+
+    #como_funciona_pasos {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+    }
+
+    #como_funciona_title > p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #como_funciona_registrate,
+    #como_funciona_compra {
+        height: 167px;
+        width: 334px;
+        grid-template-areas: "foto" "paso";
+        grid-template-rows: repeat(1, 167px);
+        grid-template-columns: 167px 167px; 
+    }
+
+    #como_funciona_busca,
+    #como_funciona_recibe {
+        height: 167px;
+        width: 334px;
+        grid-template-areas: "paso" "foto";
+        grid-template-rows: repeat(1, 167px);
+        grid-template-columns: 167px 167px; 
+    }
+
+    #como_funciona_registrate_paso,
+    #como_funciona_busca_paso,
+    #como_funciona_compra_paso,
+    #como_funciona_recibe_paso {
+       height: 55px; 
+       margin-top: auto;
+       margin-bottom: auto;
+    }
+
+    #como_funciona_registrate_paso > p,
+    #como_funciona_busca_paso > p,
+    #como_funciona_compra_paso > p,
+    #como_funciona_recibe_paso > p {
+        font-size: 14px;
+    }
+
+    #como_funciona_registrate_foto { background-image: url(../img/como-funciona-registrate-mobile.png); }
+    #como_funciona_busca_foto { background-image: url(../img/como-funciona-busca-mobile.png); }
+    #como_funciona_compra_foto { background-image: url(../img/como-funciona-compra-mobile.png); }
+    #como_funciona_recibe_foto { background-image: url(../img/como-funciona-recibe-mobile.png); }
+}
+
+/* IMAGENES DE ROPA */
+
+/* RESEÑAS */
+
+/* FOOTER */
