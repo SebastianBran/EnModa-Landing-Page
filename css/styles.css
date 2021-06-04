@@ -115,7 +115,163 @@
 /* ¿POR QUE ELEGIR ENMODA? */
 
 /* NOSOTROS */
+.Nosotros h1
+{
+    font-weight: bold;
+    position: absolute;
+    width: 360px;
+    height: 298px;
+    left: 60px;
+    top: 66px; 
 
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+   
+}
+.Nosotros p
+{
+    position: absolute;
+    width: 360px;
+    height: 141px;
+    left: 60px;
+    top:164px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+}
+.Nosotros a{
+    color: #111111;
+    position: absolute;
+    width: 142px;
+    height: 29px;
+    left: 169px;
+    top: 335px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+
+}
+
+.Nosotros .Nosotros-cuadro
+{
+    background-image: url(../img/Nosotros.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 550px;  
+   
+}
+
+.Nosotros .texto-Nosotros
+{
+    background-color: rgba(255, 255, 255, 0.9);
+    position:absolute;
+    width: 480px;
+    height:450px;
+    left:60%;
+    top:50px;  
+}
+
+@media (max-width: 1160px){
+   .Nosotros .Nosotros-cuadro
+   {
+       height: 440px;
+   }
+
+   .Nosotros .texto-Nosotros
+   {
+       left: 60%;
+       top: 56px;
+       height: 328px;
+       width: 350px; 
+   }
+
+   .Nosotros h1
+   {
+       font-size: 34px;
+       line-height: 49px;
+       width: 167px;
+       height: 44px;
+       top: 53px;
+       left: 25px;
+   }
+   
+   .Nosotros p 
+   {
+       font-size: 16px;
+       line-height: 22px;
+       width: 301px;
+       height: 108px;
+       top: 110px;
+       left: 25px;
+   }
+
+   .Nosotros a
+   {
+        font-size: 16px;
+        line-height: 22px;
+        width: 113px;
+        height: 19px;
+        top: 250px;
+        left: 119px;
+   }
+}
+
+@media (max-width: 600px)
+{
+    .Nosotros .Nosotros-cuadro
+    {
+        height: 280px;
+    }
+ 
+    .Nosotros .texto-Nosotros
+    {
+        left: 60%;
+        top: 53px;
+        height: 174px;
+        width: 167px; 
+    }
+ 
+    .Nosotros h1
+    {
+        font-size: 16px;
+        line-height:22px;
+        width: 73px;
+        height: 22px;
+        top: 19px;
+        left: 13px;
+    }
+    
+    .Nosotros p 
+    {
+        font-size: 9px;
+        line-height: 12px;
+        width: 142px;
+        height: 72px;
+        top: 50px;
+        left: 13px;
+    }
+ 
+    .Nosotros a
+    {
+         font-size: 9px;
+         line-height: 12px;
+         width: 66px;
+         height: 10px;
+         top: 139px;
+         left: 51px;
+    }
+}
 /* COMO FUNCIONA */
 
 #como_funciona { 
