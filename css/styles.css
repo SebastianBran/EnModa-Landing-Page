@@ -113,7 +113,228 @@
 }
 
 /* ¿POR QUE ELEGIR ENMODA? */
+#por_que_elegir_enmoda { 
+    max-width: 1440px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
 
+#por_que_elegir_enmoda_container {
+    width: 30% 70%;
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-areas: "titulo"
+                         "beneficios";
+    grid-template-rows: 104px 269px;
+}
+
+#por_que_elegir_enmoda_title { grid-area: titulo; }
+
+#por_que_elegir_enmoda_title > p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    margin-top: 100px;
+}
+
+#por_que_elegir_enmoda_beneficios {
+    grid-area: beneficios;
+    display: flex;
+    justify-content: space-between;
+}
+
+#por_que_elegir_enmoda_logo{
+    height: 269px;
+    width: 250px;
+    float: left;
+    margin-top: 90px;
+    margin-right: 180px;
+}
+#por_que_elegir_enmoda_variedad_de_prendas {
+    height: 269px;
+    width: 240px;
+    float: left;
+}
+#por_que_elegir_enmoda_delivery_rapido{
+    height: 269px;
+    width: 240px;
+    float: left;
+}
+
+#por_que_elegir_enmoda_metodos_de_pago{
+    height: 269px;
+    width: 240px;
+    float: left;
+    margin-top: 55px;
+}
+#por_que_elegir_enmoda_variedad_de_prendas_descripcion,
+#por_que_elegir_enmoda_metodos_de_pago_descripcion,
+#por_que_elegir_enmoda_delivery_rapido_descripcion{
+    background: rgba(31, 31, 31, 0.92);
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+#por_que_elegir_enmoda_variedad_de_prendas_descripcion > p,
+#por_que_elegir_enmoda_metodos_de_pago_descripcion > p,
+#por_que_elegir_enmoda_delivery_rapido_descripcion > p {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+}
+
+#por_que_elegir_enmoda_logo{
+    display: grid;
+    grid-template-areas: "foto"
+                         "logo";
+    grid-template-rows: 240px 150px;   
+    grid-template-columns: 270px; 
+}
+#por_que_elegir_enmoda_variedad_de_prendas,
+#por_que_elegir_enmoda_delivery_rapido {
+    display: grid;
+    grid-template-areas: "foto"
+                         "beneficio";
+    grid-template-rows: 214px 55px;  
+}
+
+#por_que_elegir_enmoda_metodos_de_pago  {
+    display: grid;
+    grid-template-areas: "beneficio"
+                         "foto";
+    grid-template-rows: 55px 214px;    
+}
+
+#por_que_elegir_enmoda_logo_foto { 
+background-image: url(../img/logo-enmoda.png);
+margin-top: 50px;
+margin-left: 70px;
+}
+#por_que_elegir_enmoda_variedad_de_prendas_foto { 
+background-image: url(../img/porque-elegir-enmoda-variedad-de-prendas.png);
+}
+#por_que_elegir_enmoda_metodos_de_pago_foto 
+{ background-image: url(../img/porque-elegir-enmoda-metodos-de-pago.png);}
+#por_que_elegir_enmoda_delivery_rapido_foto 
+{ background-image: url(../img/porque-elegir-enmoda-delivery-rapido.png); }
+
+@media (max-width: 1160px) {
+    #por_que_elegir_enmoda { 
+        height: 1000px;
+    }
+    #por_que_elegir_enmoda_container {
+        height: 667px;
+        grid-template-rows: 104px 563px;
+    }
+    #por_que_elegir_enmoda_beneficios {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 25px;
+    }
+    #por_que_elegir_enmoda_title > p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 65px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    #por_que_elegir_enmoda_logo{
+        height: 269px;
+        width: 250px;
+        float: left;
+        margin-top: 0px;
+        margin-right: 180px;
+    }
+    #por_que_elegir_enmoda_metodos_de_pago{
+        margin-top: 0px;
+    }
+    #por_que_elegir_enmoda_metodos_de_pago,
+    #por_que_elegir_enmoda_variedad_de_prendas,
+    #por_que_elegir_enmoda_delivery_rapido {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+@media (max-width: 600px) {
+    #por_que_elegir_enmoda { height: 800px; }
+
+    #por_que_elegir_enmoda_container {
+        width: 89.333333%;
+        height: 740px;
+        grid-template-rows: 50px 500px;
+    }
+
+    #por_que_elegir_enmoda_beneficios {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+    }
+
+    #por_que_elegir_enmoda_title > p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #por_que_elegir_enmoda_metodos_de_pago {
+        height: 167px;
+        width: 334px;
+        grid-template-areas: "foto" "beneficio";
+        grid-template-rows: repeat(1, 167px);
+        grid-template-columns: 167px 167px; 
+    }
+    #por_que_elegir_enmoda_variedad_de_prendas,
+    #por_que_elegir_enmoda_delivery_rapido {
+        height: 167px;
+        width: 334px;
+        grid-template-areas: "beneficio" "foto";
+        grid-template-rows: repeat(1, 167px);
+        grid-template-columns: 167px 167px; 
+    }
+    #por_que_elegir_enmoda_variedad_de_prendas_descripcion,
+    #por_que_elegir_enmoda_metodos_de_pago_descripcion,
+    #por_que_elegir_enmoda_delivery_rapido_descripcion {
+       height: 55px; 
+       margin-top: auto;
+       margin-bottom: auto;
+    }
+    #por_que_elegir_enmoda_variedad_de_prendas_descripcion > p,
+    #por_que_elegir_enmoda_metodos_de_pago_descripcion > p,
+    #por_que_elegir_enmoda_delivery_rapido_descripcion > p {
+        font-size: 14px;
+    }
+
+    #por_que_elegir_enmoda_logo{
+        height: 0.5px;
+        width: 0.5px;
+    }
+    #por_que_elegir_enmoda_logo_foto{
+        background-image: url();
+    }
+    #por_que_elegir_enmoda_variedad_de_prendas_foto 
+    { background-image: url(../img/porque-elegir-enmoda-variedad-de-prendas-mobile.png); }
+    #por_que_elegir_enmoda_metodos_de_pago_foto 
+    { background-image: url(../img/porque-elegir-enmoda-metodos-de-pago-mobile.png); }
+    #por_que_elegir_enmoda_delivery_rapido_foto
+    { background-image: url(../img/porque-elegir-enmoda-delivery-rapido-mobile.png); }
+}
 /* NOSOTROS */
 .Nosotros h1
 {
@@ -129,6 +350,7 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 65px;
+   
 }
 .Nosotros p
 {
@@ -162,7 +384,7 @@
 
 .Nosotros .Nosotros-cuadro
 {
-    background-image: url(../img/Nosotros.png);
+     background-image: url(../img/Nosotros.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -174,7 +396,8 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+   
 }
 
 .Nosotros .texto-Nosotros
@@ -182,12 +405,12 @@
     background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     width: 480px;
-    height: 450px;
-    right: 60px;
-    top: auto;  
+    height:450px;
+    left:60%;
+    top:50px;  
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1160px){
    .Nosotros .Nosotros-cuadro
    {
        height: 440px;
@@ -195,13 +418,15 @@
 
    .Nosotros .texto-Nosotros
    {
+       left: 60%;
+       top: 56px;
        height: 328px;
        width: 350px; 
    }
 
    .Nosotros h1
    {
-       font-size: 32px;
+       font-size: 34px;
        line-height: 49px;
        width: 167px;
        height: 44px;
@@ -239,6 +464,8 @@
  
     .Nosotros .texto-Nosotros
     {
+        left: 60%;
+        top: 53px;
         height: 174px;
         width: 167px; 
     }
@@ -265,12 +492,12 @@
  
     .Nosotros a
     {
-        font-size: 9px;
-        line-height: 12px;
-        width: 66px;
-        height: 10px;
-        top: 139px;
-        left: 51px;
+         font-size: 9px;
+         line-height: 12px;
+         width: 66px;
+         height: 10px;
+         top: 139px;
+         left: 51px;
     }
 }
 /* COMO FUNCIONA */
