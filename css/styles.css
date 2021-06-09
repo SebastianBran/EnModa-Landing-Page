@@ -716,6 +716,12 @@ background-image: url(../img/porque-elegir-enmoda-variedad-de-prendas.png);
     grid-template-rows: 55px 214px;    
 }
 
+#como_funciona_busca_paso { grid-area: paso; }
+#como_funciona_busca_foto { grid-area: foto; }
+
+#como_funciona_recibe_paso { grid-area: paso; }
+#como_funciona_recibe_foto { grid-area: foto; }
+
 #como_funciona_registrate_foto { background-image: url(../img/como-funciona-registrate.png); }
 #como_funciona_busca_foto { background-image: url(../img/como-funciona-busca.png); }
 #como_funciona_compra_foto { background-image: url(../img/como-funciona-compra.png); }
@@ -735,6 +741,13 @@ background-image: url(../img/porque-elegir-enmoda-variedad-de-prendas.png);
         display: grid;
         grid-template-columns: 50% 50%;
         grid-row-gap: 25px;
+    }
+
+    #como_funciona_busca,
+    #como_funciona_recibe {
+        grid-template-areas: "foto"
+                            "paso";
+        grid-template-rows: 214px 55px;    
     }
 
     #como_funciona_registrate,
@@ -790,6 +803,9 @@ background-image: url(../img/porque-elegir-enmoda-variedad-de-prendas.png);
         grid-template-rows: repeat(1, 167px);
         grid-template-columns: 167px 167px; 
     }
+
+    #como_funciona_busca_foto { grid-area: auto; }
+    #como_funciona_recibe_foto { grid-area: auto; }
 
     #como_funciona_registrate_paso,
     #como_funciona_busca_paso,
