@@ -934,4 +934,516 @@ background-image: url(../img/porque-elegir-enmoda-variedad-de-prendas.png);
 
 /* RESEÑAS */
 
+/*caja de comentarios*/
+#reseñas {
+    max-width: 1440px;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+#reseñas_container {
+    width: 83.333333%;
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "reseñas comenta";
+    grid-template-rows: 75px 1fr;
+    grid-template-columns: 60% 40%;
+}
+
+#reseñas_title {
+    grid-area: titulo;
+}
+
+#reseñas_title > p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+#reseñas_comentarios_container { grid-area: reseñas; }
+
+#reseñas_comentarios {
+    display: flex;
+    flex-direction: column;
+}
+
+#reseñas_comentarios_title,
+#reseñas_comentarios_ver_mas {
+    display: none;
+}
+
+#reseñas_comentario_uno,
+#reseñas_comentario_dos,
+#reseñas_comentario_tres,
+#reseñas_comentario_cuatro {
+    height: min-content;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "foto nombre estrellas fecha" 
+                         "foto contenido contenido contenido";
+    grid-template-columns: 100px 180px 1fr 100px;
+    grid-template-rows: 50px 1fr;
+    background: #F4F4F4;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+#reseñas_comentario_uno_foto,
+#reseñas_comentario_dos_foto,
+#reseñas_comentario_tres_foto,
+#reseñas_comentario_cuatro_foto { 
+    grid-area: foto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70px;
+    height: 70px;
+}
+
+#reseñas_comentario_uno_foto { background-image: url(../img/imagen-comentario-1.png); }
+#reseñas_comentario_dos_foto { background-image: url(../img/imagen-comentario-2.png); }
+#reseñas_comentario_tres_foto { background-image: url(../img/imagen-comentario-3.png); }
+#reseñas_comentario_cuatro_foto { background-image: url(../img/imagen-comentario-4.png); }
+
+#reseñas_comentario_uno_nombre,
+#reseñas_comentario_dos_nombre,
+#reseñas_comentario_tres_nombre,
+#reseñas_comentario_cuatro_nombre {
+    grid-area: nombre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#reseñas_comentario_uno_estrellas,
+#reseñas_comentario_dos_estrellas,
+#reseñas_comentario_tres_estrellas,
+#reseñas_comentario_cuatro_estrellas {
+    grid-area: estrellas;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 181px;
+    height: 28px;
+}
+
+#reseñas_comentario_uno_estrellas,
+#reseñas_comentario_dos_estrellas {
+    background-image: url(../img/cinco-estrellas-marcadas.png);
+}
+
+#reseñas_comentario_tres_estrellas,
+#reseñas_comentario_cuatro_estrellas {
+    background-image: url(../img/cuatro-estrellas-marcadas.png);
+}
+
+#reseñas_comentario_uno_fecha,
+#reseñas_comentario_dos_fecha,
+#reseñas_comentario_tres_fecha,
+#reseñas_comentario_cuatro_fecha {
+    grid-area: fecha;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-self: right;
+    padding-right: 15px;
+}
+
+#reseñas_comentario_uno_contenido,
+#reseñas_comentario_dos_contenido,
+#reseñas_comentario_tres_contenido,
+#reseñas_comentario_cuatro_contenido {
+    grid-area: contenido;
+    padding-right: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+/*Formulario de comenta*/
+#reseñas_comenta {
+    width: 360px;
+    height: 480px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: "titulo"
+                         "nombres"
+                         "apellidos"
+                         "comentario"
+                         "estrellas"
+                         "publicar";
+    grid-template-rows: 50px 67px 67px 165px 50px 1fr;
+}
+
+#reseñas_comenta_title { grid-area: titulo; }
+#reseñas_input_nombres { grid-area: nombres; }
+#reseñas_input_apellidos { grid-area: apellidos; }
+#reseñas_input_comentario { grid-area: comentario; }
+#reseñas_califica { grid-area: estrellas; }
+#reseñas_boton_publicar { grid-area: publicar}
+
+#reseñas_comenta_title > p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+#reseñas_input_nombres,
+#reseñas_input_apellidos,
+#reseñas_input_comentario {
+    width: 360px;
+    border-radius: 5px;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#reseñas_input_nombres::placeholder,
+#reseñas_input_apellidos::placeholder,
+#reseñas_input_comentario::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B5B5B5;
+}
+
+#reseñas_input_nombres,
+#reseñas_input_apellidos {
+    height: 42px;
+}
+
+#reseñas_input_comentario {
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+}
+
+#reseñas_califica {
+    display: flex;
+    align-items: center;
+}
+
+#reseñas_califica > span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B5B5B5;
+    margin-right: 20px;
+}
+
+#reseñas_califica > div {
+    background-image: url(../img/cinco-estrellas-sin-marcar.png);
+    background-repeat: no-repeat;
+    width: 181px;
+    height: 28px;
+    display: inline-block;
+}
+
+#reseñas_boton_publicar {
+    width: 140px;
+    height: 40px;
+    justify-self: right;
+    background: #F8D71B;
+    border-radius: 5px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+#reseñas_boton_publicar:active { background: #b49c14; }
+
+@media (max-width: 1160px) {
+    #reseñas_container {
+        grid-template-areas: "titulo"
+                             "comenta"
+                             "reseñas";
+        grid-template-columns: 100%;
+        grid-template-rows: 75px 400px 1fr;
+    }
+
+    #reseñas_comenta {
+        width: 100%;
+        height: 332px;
+        grid-template-areas: "titulo titulo titulo"
+                             "nombres apellidos apellidos"
+                             "comentario comentario comentario"
+                             "estrellas estrellas publicar";
+        grid-template-columns: 50% 1fr 140px;
+        grid-template-rows: 50px 67px 165px 50px;
+    }
+
+    #reseñas_input_nombres,
+    #reseñas_input_apellidos {
+        width: 98%;
+    }
+
+    #reseñas_input_apellidos { justify-self: right; }
+
+    #reseñas_input_comentario { width: 100%; }
+
+    #reseñas_boton_publicar {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #reseñas_comentarios_title { display: inline }
+
+    #reseñas_comentarios_title > p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
+@media (max-width: 700px) {
+    #reseñas_container {
+        grid-template-areas: "titulo"
+                             "comenta"
+                             "reseñas";
+        grid-template-columns: 100%;
+        grid-template-rows: 75px 350px max-content;
+    }
+
+    #reseñas_comentario_uno,
+    #reseñas_comentario_dos,
+    #reseñas_comentario_tres,
+    #reseñas_comentario_cuatro {
+        height: min-content;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "foto nombre" 
+                             "foto fecha"
+                             "foto estrellas"
+                             "contenido contenido";
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 40px 25px 25px min-content;
+    }
+
+    #reseñas_comentario_cuatro { display: none; }
+    #reseñas_comentarios_ver_mas { display: inline; }
+
+    #reseñas_comentarios_ver_mas > p { 
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    #reseñas_comentario_uno_foto,
+    #reseñas_comentario_dos_foto,
+    #reseñas_comentario_tres_foto,
+    #reseñas_comentario_cuatro_foto { 
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
+        margin-left: 15px;
+        background-size: cover;
+    }
+
+    #reseñas_comentario_uno_nombre,
+    #reseñas_comentario_dos_nombre,
+    #reseñas_comentario_tres_nombre,
+    #reseñas_comentario_cuatro_nombre {
+        grid-area: nombre;
+        font-size: 21px;
+        line-height: 29px;
+        margin-top: 15px;
+
+    }
+
+    #reseñas_comentario_uno_fecha,
+    #reseñas_comentario_dos_fecha,
+    #reseñas_comentario_tres_fecha,
+    #reseñas_comentario_cuatro_fecha {
+        margin-top: 5px;
+        justify-self: left;
+    }
+
+    #reseñas_comentario_uno_contenido,
+    #reseñas_comentario_dos_contenido,
+    #reseñas_comentario_tres_contenido,
+    #reseñas_comentario_cuatro_contenido {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    #reseñas_container {
+        grid-template-areas: "titulo"
+                             "comenta"
+                             "reseñas";
+        grid-template-columns: 100%;
+        grid-template-rows: 30px 270px 1fr;
+    }
+
+    #reseñas_title > p {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    /*Formulario de comenta*/
+
+    #reseñas_comenta {
+        width: 100%;
+        height: 246px;
+        grid-template-areas: "titulo titulo titulo"
+                             "nombres apellidos apellidos"
+                             "comentario comentario comentario"
+                             "estrellas estrellas publicar";
+        grid-template-columns: 50% 1fr 140px;
+        grid-template-rows: 30px 45px 121px 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #reseñas_comenta_title > p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    #reseñas_input_nombres,
+    #reseñas_input_apellidos {
+        height: 34px;
+    }
+
+    #reseñas_input_comentario { height: 121px; }
+
+    #reseñas_input_nombres::placeholder,
+    #reseñas_input_apellidos::placeholder,
+    #reseñas_input_comentario::placeholder {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #reseñas_califica > span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #reseñas_califica > div {
+        background-image: url(../img/cinco-estrellas-sin-marcar-mobile.png);
+        width: 140px;
+        height: 20px;
+    }
+       
+    #reseñas_boton_publicar {
+        width: 108px;
+        height: 34px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    /*comentarios*/
+
+    #reseñas_comentarios_title > p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    #reseñas_comentario_uno,
+    #reseñas_comentario_dos,
+    #reseñas_comentario_tres,
+    #reseñas_comentario_cuatro {
+        height: min-content;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "foto nombre" 
+                             "foto fecha"
+                             "foto estrellas"
+                             "contenido contenido";
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: 25px 20px 18px min-content;
+    }
+
+    #reseñas_comentario_cuatro { display: none; }
+    #reseñas_comentarios_ver_mas { display: inline; }
+
+    #reseñas_comentario_uno_foto,
+    #reseñas_comentario_dos_foto,
+    #reseñas_comentario_tres_foto,
+    #reseñas_comentario_cuatro_foto { 
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 51px;
+        height: 51px;
+    }
+
+    #reseñas_comentario_uno_nombre,
+    #reseñas_comentario_dos_nombre,
+    #reseñas_comentario_tres_nombre,
+    #reseñas_comentario_cuatro_nombre {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #reseñas_comentario_uno_fecha,
+    #reseñas_comentario_dos_fecha,
+    #reseñas_comentario_tres_fecha,
+    #reseñas_comentario_cuatro_fecha {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 3px;
+        margin-bottom: auto;
+    }
+    
+    #reseñas_comentario_uno_estrellas,
+    #reseñas_comentario_dos_estrellas,
+    #reseñas_comentario_tres_estrellas,
+    #reseñas_comentario_cuatro_estrellas {
+        width: 140px;
+        height: 20px;
+    }
+
+    #reseñas_comentario_uno_estrellas,
+    #reseñas_comentario_dos_estrellas {
+        background-image: url(../img/cinco-estrellas-marcadas-mobile.png);
+    }
+    
+    #reseñas_comentario_tres_estrellas,
+    #reseñas_comentario_cuatro_estrellas {
+        background-image: url(../img/cuatro-estrellas-marcadas-mobile.png);
+    }
+
+    #reseñas_comentario_uno_contenido,
+    #reseñas_comentario_dos_contenido,
+    #reseñas_comentario_tres_contenido,
+    #reseñas_comentario_cuatro_contenido {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px;
+    }
+}
+
 /* FOOTER */
