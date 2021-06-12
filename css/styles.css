@@ -1046,6 +1046,8 @@ margin-left: 70px;
     height: min-content;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #reseñas_container {
@@ -1053,6 +1055,8 @@ margin-left: 70px;
     height: min-content;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-areas: "titulo titulo"
                          "reseñas comenta";
@@ -1424,7 +1428,7 @@ margin-left: 70px;
                              "nombres apellidos apellidos"
                              "comentario comentario comentario"
                              "estrellas estrellas publicar";
-        grid-template-columns: 50% 1fr 140px;
+        grid-template-columns: 50% 1fr 108px;
         grid-template-rows: 30px 45px 121px 50px;
         margin-top: auto;
         margin-bottom: auto;
