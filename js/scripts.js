@@ -36,6 +36,14 @@ window.addEventListener('load', function (){
                         slidesToScroll: 2,
                     }
                 },
+                {
+                    // screens greater than >= 1024px
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
 
                 {
                     // screens greater than >= 600px
