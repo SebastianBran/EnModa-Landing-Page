@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,267 +14,250 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
-    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
-    <!--Jquery-------------------->
-    <script type="text/javascript" src="./js/jquery-3.5.1.js"></script>
-    <!--lightslider.js--------------->
-    <script type="text/javascript" src="./js/lightslider.js"></script>
-    <!--script-link----------->
-    <script type="text/javascript" src="./js/scripts.js"></script>
+    <!--Stilos jsdelivr para la parte de productos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
 </head>
 <body>
-    <header id="header">
-        <nav id="navegacion">
-            <label class="logo">
-                EnModa
-            </label>
-            <img id="LogoImage" src="img/logo-enmoda.png" alt="Logotipo">
-            <input type="checkbox" id="checkk">
-            <label for="checkk" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            
-            <ul id="nav-id">
-                <li><a  href="#">Home</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">¿Cómo funciona?</a></li>
-                <li><a href="#slider">Productos</a></li>
-                <li><a href="#">Reseñas</a></li>
-                <li><a href="#">Contacto</a></li>
-                <label class="UserIcon">
-                    <i class="fas fa-user-circle"></i>
-                </label>
-            </ul>
-        </nav>
-    </header> <!-- Header -->
-    <section id="hero" class="hero">
-        <div class="fondo-hero" ></div>
-        <h1>
-            TU ESTILO ES NUESTRA PRIORIDAD
-        </h1>
-        <a href="#" class="btn">
-            Compra ahora
-        </a>
-    </section> <!-- Hero page -->
-    <section id="por_que_elegir_enmoda">
-            <div id="por_que_elegir_enmoda_container">
-                <div id="por_que_elegir_enmoda_title">
-                    <p>¿Por qué elegir EnModa?</p>
-                </div>
-                <div id="por_que_elegir_enmoda_beneficios">
-                    <div id="por_que_elegir_enmoda_logo">
-                        <div id="por_que_elegir_enmoda_logo_foto"></div>
-                    </div>
-                    <div id="por_que_elegir_enmoda_variedad_de_prendas">
-                        <div id="por_que_elegir_enmoda_variedad_de_prendas_foto"></div>
-                        <div id="por_que_elegir_enmoda_variedad_de_prendas_descripcion">
-                            <p>Variedad de prendas</p>
-                        </div>
-                    </div>
-                    <div id="por_que_elegir_enmoda_metodos_de_pago">
-                        <div id="por_que_elegir_enmoda_metodos_de_pago_descripcion">
-                            <p>Diferentes métodos <br> de pago </p>
-                        </div>
-                        <div id="por_que_elegir_enmoda_metodos_de_pago_foto"></div>
-                    </div>
-                    <div id="por_que_elegir_enmoda_delivery_rapido">
-                        <div id="por_que_elegir_enmoda_delivery_rapido_foto"></div>
-                        <div id="por_que_elegir_enmoda_delivery_rapido_descripcion">
-                            <p>Delivery rápido y <br> seguro</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section> <!-- ¿Por qué elegir EnModa? -->
-    <section id="Nosotros" class="Nosotros">
-        <div class = "Nosotros-cuadro">
-            <div class="texto-Nosotros">
-                <h1>NOSOTROS</h1>
-                <p>En Moda existe para impulsar a los microempresarios a utilizar plataformas virtuales, brindandoles facilidades y recursos para que puedan triunfar en este medio.</p>
-                <a href="#">Descubre más</a>
-            </div>    
-       </div> 
-    </section> <!-- Nosotros -->
-    <section id="como_funciona">
-        <div id="como_funciona_container">
-            <div id="como_funciona_title">
-                <p>¿Cómo funciona?</p>
-            </div>
-            <div id="como_funciona_pasos">
-                <div id="como_funciona_registrate">
-                    <div id="como_funciona_registrate_foto"></div>
-                    <div id="como_funciona_registrate_paso">
-                        <p>Regístrate</p>
-                    </div>
-                </div>
-                <div id="como_funciona_busca">
-                    <div id="como_funciona_busca_paso">
-                        <p>Busca</p>
-                    </div>
-                    <div id="como_funciona_busca_foto"></div>
-                </div>
-                <div id="como_funciona_compra">
-                    <div id="como_funciona_compra_foto"></div>
-                    <div id="como_funciona_compra_paso">
-                        <p>Compra</p>
-                    </div>
-                </div>
-                <div id="como_funciona_recibe">
-                    <div id="como_funciona_recibe_paso">
-                        <p>Recibe</p>
-                    </div>
-                    <div id="como_funciona_recibe_foto"></div>
-                </div>
-            </div>
-        </div>
-    </section> <!-- Como funciona -->
-    <section id="slider" class="slider">
-        <ul id="autoWidth" class="cS-hidden">
-            <li class="item-a">
-                <!--box-slider--------------->
-                <div class="box">
-                    <!--img-box---------->
-                    <div class="slide-img">
-                        <img alt="Image-1" src="./img/Image1.png">
-                        <!--overlayer---------->
-                        <div class="overlay">
-                            <!--buy-btn------>
-                            <a href="#" class="buy-btn">Compra ahora</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </li>
-            <!--2------------------------------------>
-            <li>
-                <!--box-slider--------------->
-                <div class="box">
-                    <!--img-box---------->
-                    <div class="slide-img">
-                        <img alt="Image-2" src="./img/Image2.png">
-                        <!--overlayer---------->
-                        <div class="overlay">
-                            <!--buy-btn------>
-                            <a href="#" class="buy-btn">Compra ahora</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!--3------------------------------------>
-            <li>
-                <!--box-slider--------------->
-                <div class="box">
-                    <!--img-box---------->
-                    <div class="slide-img">
-                        <img alt="Image-3" src="./img/Image3.png">
-                        <!--overlayer---------->
-                        <div class="overlay">
-                            <!--buy-btn------>
-                            <a href="#" class="buy-btn">Compra ahora</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!--4------------------------------------>
-            <li>
-                <!--box-slider--------------->
-                <div class="box">
-                    <!--img-box---------->
-                    <div class="slide-img">
-                        <img alt="Image-4" src="./img/Image4.png">
-                        <!--overlayer---------->
-                        <div class="overlay">
-                            <!--buy-btn------>
-                            <a  href="#" class="buy-btn">Compra ahora</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!--5------------------------------------>
-            <li>
-                <!--box-slider--------------->
-                <div class="box">
-                    <!--img-box---------->
-                    <div class="slide-img">
-                        <img alt="Image-5" src="./img/Image5.jpg">
-                        <!--overlayer---------->
-                        <div class="overlay">
-                            <!--buy-btn------>
-                            <a  href="#" class="buy-btn">Compra ahora</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
+<section class="menu" >
+    <nav>
+        <img class="logoImagen" src="img/logo-enmoda.png" alt="logo">
+        <div class="logo"><h1>EnModa</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">¿Cómo funciona?</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Reseñas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                             <i class="far fa-user-circle"></i>
+                        </span>
         </ul>
-    </section>  <!-- Imagenes de ropa -->
-    <section id="reseñas">
-        <div id="reseñas_container">
-            <div id="reseñas_title">
-                <p>Reseñas</p>
+        <div class="UserMenu"><i  class="far fa-user-circle"></i></div>
+    </nav>
+</section>
+
+<section id="hero" class="hero">
+    <div class="fondo-hero" ></div>
+    <h1>
+        TU ESTILO ES NUESTRA PRIORIDAD
+    </h1>
+    <a href="#" class="btn">
+        Compra ahora
+    </a>
+</section> <!-- Hero page -->
+
+
+<section id="por_que_elegir_enmoda">
+    <div id="por_que_elegir_enmoda_container">
+        <div id="por_que_elegir_enmoda_title">
+            <p>¿Por qué elegir EnModa?</p>
+        </div>
+        <div id="por_que_elegir_enmoda_beneficios">
+            <div id="por_que_elegir_enmoda_logo">
+                <div id="por_que_elegir_enmoda_logo_foto"></div>
             </div>
-            <div id="reseñas_comentarios_container">
-                <div id="reseñas_comentarios_title"><p>Comentarios</p></div>
-                <div id="reseñas_comentarios">
-                    <div id="reseñas_comentario_uno">
-                        <div id="reseñas_comentario_uno_foto"></div>
-                        <div id="reseñas_comentario_uno_nombre">Esteban Borrego</div>
-                        <div id="reseñas_comentario_uno_estrellas"></div>
-                        <div id="reseñas_comentario_uno_fecha">29-mar-2021</div>
-                        <div id="reseñas_comentario_uno_contenido">
-                            <p>Entré inseguro de promocionar mis prendas de vestir, pero luego de ver la acogida de las personas a la página e logrado reactivar mi negocio. GRACIAS!</p>
-                        </div>
-                    </div>
-                    <div id="reseñas_comentario_dos">
-                        <div id="reseñas_comentario_dos_foto"></div>
-                        <div id="reseñas_comentario_dos_nombre">Gustavo Vargas</div>
-                        <div id="reseñas_comentario_dos_estrellas"></div>
-                        <div id="reseñas_comentario_dos_fecha">27-mar-2021</div>
-                        <div id="reseñas_comentario_dos_contenido">
-                            <p>Encontré lo que buscaba para mi hijo, prendas de buena calidad y a un buen precio. El delivery llegó muy rápido y en buenas condiciones. RECOMENDADO</p>
-                        </div>
-                    </div>
-                    <div id="reseñas_comentario_tres">
-                        <div id="reseñas_comentario_tres_foto"></div>
-                        <div id="reseñas_comentario_tres_nombre">Esperanza Perez</div>
-                        <div id="reseñas_comentario_tres_estrellas"></div>
-                        <div id="reseñas_comentario_tres_fecha">26-mar-2021</div>
-                        <div id="reseñas_comentario_tres_contenido">
-                            <p>Variedad de prendas que escoger y muy bonitas, tenía miedo de no poder pagar por Yape, pero no! Presentan todo tipo de pago. Me gustaría tener más dinero!</p>
-                        </div>
-                    </div>
-                    <div id="reseñas_comentario_cuatro">
-                        <div id="reseñas_comentario_cuatro_foto"></div>
-                        <div id="reseñas_comentario_cuatro_nombre">Estefano Salvini</div>
-                        <div id="reseñas_comentario_cuatro_estrellas"></div>
-                        <div id="reseñas_comentario_cuatro_fecha">24-mar-2021</div>
-                        <div id="reseñas_comentario_cuatro_contenido">
-                            <p>Vine con poca fe, pensé que no encontraría el polo que buscaba, porque es de anime, pero LO ENCONTRÉ. Enserio en esta página venden de todo.</p>
-                        </div>
-                    </div>
+            <div id="por_que_elegir_enmoda_variedad_de_prendas">
+                <div id="por_que_elegir_enmoda_variedad_de_prendas_foto"></div>
+                <div id="por_que_elegir_enmoda_variedad_de_prendas_descripcion">
+                    <p>Variedad de prendas</p>
                 </div>
-                <div id="reseñas_comentarios_ver_mas"><p>Ver más comentarios</p></div>
             </div>
-            <div id="reseñas_comenta">
-                <div id="reseñas_comenta_title">
-                    <p>Comenta!</p>
+            <div id="por_que_elegir_enmoda_metodos_de_pago">
+                <div id="por_que_elegir_enmoda_metodos_de_pago_descripcion">
+                    <p>Diferentes métodos <br> de pago </p>
                 </div>
-                <input id="reseñas_input_nombres" type="text" placeholder="Nombres">
-                <input id="reseñas_input_apellidos" type="text" placeholder="Apellidos">
-                <textarea id="reseñas_input_comentario" placeholder="Escribe tu comentario"></textarea>
-                <div id="reseñas_califica">
-                    <span>Califica</span>
-                    <div></div>
+                <div id="por_que_elegir_enmoda_metodos_de_pago_foto"></div>
+            </div>
+            <div id="por_que_elegir_enmoda_delivery_rapido">
+                <div id="por_que_elegir_enmoda_delivery_rapido_foto"></div>
+                <div id="por_que_elegir_enmoda_delivery_rapido_descripcion">
+                    <p>Delivery rápido y <br> seguro</p>
                 </div>
-                <button id="reseñas_boton_publicar">Publicar</button>
             </div>
         </div>
-    </section> <!-- Reseñas -->
-    <footer></footer> <!-- footer -->
+    </div>
+</section> <!-- ¿Por qué elegir EnModa? -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="./js/scripts.js"></script>
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/4d3dae07b9.js" crossorigin="anonymous"></script>
+<section id="Nosotros" class="Nosotros">
+    <div class = "Nosotros-cuadro">
+        <div class="texto-Nosotros">
+            <h1>NOSOTROS</h1>
+            <p>En Moda existe para impulsar a los microempresarios a utilizar plataformas virtuales, brindandoles facilidades y recursos para que puedan triunfar en este medio.</p>
+            <a href="#">Descubre más</a>
+        </div>
+    </div>
+</section> <!-- Nosotros -->
+<section id="como_funciona">
+    <div id="como_funciona_container">
+        <div id="como_funciona_title">
+            <p>¿Cómo funciona?</p>
+        </div>
+        <div id="como_funciona_pasos">
+            <div id="como_funciona_registrate">
+                <div id="como_funciona_registrate_foto"></div>
+                <div id="como_funciona_registrate_paso">
+                    <p>Regístrate</p>
+                </div>
+            </div>
+            <div id="como_funciona_busca">
+                <div id="como_funciona_busca_paso">
+                    <p>Busca</p>
+                </div>
+                <div id="como_funciona_busca_foto"></div>
+            </div>
+            <div id="como_funciona_compra">
+                <div id="como_funciona_compra_foto"></div>
+                <div id="como_funciona_compra_paso">
+                    <p>Compra</p>
+                </div>
+            </div>
+            <div id="como_funciona_recibe">
+                <div id="como_funciona_recibe_paso">
+                    <p>Recibe</p>
+                </div>
+                <div id="como_funciona_recibe_foto"></div>
+            </div>
+        </div>
+    </div>
+</section> <!-- Como funciona -->
+
+<section class="contenedor">
+    <div class="carousel">
+        <div class="carousel__contenedor">
+            <!--Buttom left-->
+            <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="carousel__lista">
+                <div class="carousel__elemento">
+                    <img id="img1" class="imagenes"  src="img/Image1.png" alt="Imagen 1" >
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img class="imagenes"  src="img/Image2.png" alt="Imagen 2">
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img class="imagenes"  src="img/Image3.png" alt="Imagen 3">
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img class="imagenes"  src="img/Image4.png" alt="Imagen 4">
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img class="imagenes"  src="img/Image5.jpg" alt="Imagen 5">
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img class="imagenes"  src="img/Image1.png" alt="Imagen 6">
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img class="imagenes"  src="img/Image2.png" alt="Imagen 7">
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img class="imagenes"  src="img/Image3.png" alt="Imagen 8">
+                    <a href="#" class="buy-btn">Compra ahora</a>
+                </div>
+
+            </div>
+            <!--Buttom right-->
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </div>
+        <div role="tablist" class="carousel__indicadores"></div>
+    </div>
+</section>
+
+<section id="reseñas">
+    <div id="reseñas_container">
+        <div id="reseñas_title">
+            <p>Reseñas</p>
+        </div>
+        <div id="reseñas_comentarios_container">
+            <div id="reseñas_comentarios_title"><p>Comentarios</p></div>
+            <div id="reseñas_comentarios">
+                <div id="reseñas_comentario_uno">
+                    <div id="reseñas_comentario_uno_foto"></div>
+                    <div id="reseñas_comentario_uno_nombre">Esteban Borrego</div>
+                    <div id="reseñas_comentario_uno_estrellas"></div>
+                    <div id="reseñas_comentario_uno_fecha">29-mar-2021</div>
+                    <div id="reseñas_comentario_uno_contenido">
+                        <p>Entré inseguro de promocionar mis prendas de vestir, pero luego de ver la acogida de las personas a la página e logrado reactivar mi negocio. GRACIAS!</p>
+                    </div>
+                </div>
+                <div id="reseñas_comentario_dos">
+                    <div id="reseñas_comentario_dos_foto"></div>
+                    <div id="reseñas_comentario_dos_nombre">Gustavo Vargas</div>
+                    <div id="reseñas_comentario_dos_estrellas"></div>
+                    <div id="reseñas_comentario_dos_fecha">27-mar-2021</div>
+                    <div id="reseñas_comentario_dos_contenido">
+                        <p>Encontré lo que buscaba para mi hijo, prendas de buena calidad y a un buen precio. El delivery llegó muy rápido y en buenas condiciones. RECOMENDADO</p>
+                    </div>
+                </div>
+                <div id="reseñas_comentario_tres">
+                    <div id="reseñas_comentario_tres_foto"></div>
+                    <div id="reseñas_comentario_tres_nombre">Esperanza Perez</div>
+                    <div id="reseñas_comentario_tres_estrellas"></div>
+                    <div id="reseñas_comentario_tres_fecha">26-mar-2021</div>
+                    <div id="reseñas_comentario_tres_contenido">
+                        <p>Variedad de prendas que escoger y muy bonitas, tenía miedo de no poder pagar por Yape, pero no! Presentan todo tipo de pago. Me gustaría tener más dinero!</p>
+                    </div>
+                </div>
+                <div id="reseñas_comentario_cuatro">
+                    <div id="reseñas_comentario_cuatro_foto"></div>
+                    <div id="reseñas_comentario_cuatro_nombre">Estefano Salvini</div>
+                    <div id="reseñas_comentario_cuatro_estrellas"></div>
+                    <div id="reseñas_comentario_cuatro_fecha">24-mar-2021</div>
+                    <div id="reseñas_comentario_cuatro_contenido">
+                        <p>Vine con poca fe, pensé que no encontraría el polo que buscaba, porque es de anime, pero LO ENCONTRÉ. Enserio en esta página venden de todo.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="reseñas_comentarios_ver_mas"><p>Ver más comentarios</p></div>
+        </div>
+        <div id="reseñas_comenta">
+            <div id="reseñas_comenta_title">
+                <p>Comenta!</p>
+            </div>
+            <input id="reseñas_input_nombres" type="text" placeholder="Nombres">
+            <input id="reseñas_input_apellidos" type="text" placeholder="Apellidos">
+            <textarea id="reseñas_input_comentario" placeholder="Escribe tu comentario"></textarea>
+            <div id="reseñas_califica">
+                <span>Califica</span>
+                <div></div>
+            </div>
+            <button id="reseñas_boton_publicar">Publicar</button>
+        </div>
+    </div>
+</section> <!-- Reseñas -->
+<footer></footer> <!-- footer -->
+
+<!--Js delivr-->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+
+<!--script-link----------->
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
-</html>
