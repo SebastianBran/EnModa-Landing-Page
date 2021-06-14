@@ -4,11 +4,18 @@
 
 /* HEADER */
 
+.menu{
+    height:80px;
+}
 nav {
-    position: fixed;
-    width: 100%;
-    height: 80px;
 
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    height: 80px;
     background: #ffffff;
     color: #000;
     display: flex;
@@ -241,7 +248,6 @@ nav .logo {
 .hero {
     position: relative;
     justify-content: center;
-    top:80px;
     max-width: 1440px;
     height: 790px;
     width: 100%;
@@ -268,7 +274,6 @@ nav .logo {
     width: 476px;
     height: 257px;
     left: 120px;
-    top: 325px;
 
     font-family: Noto Sans;
     font-style: normal;
@@ -308,7 +313,6 @@ nav .logo {
         width: 263px;
         height: 136px;
         left: 60px;
-        top: 205px;
         font-size: 36px;
         line-height: 50px;
     }
@@ -329,7 +333,6 @@ nav .logo {
         width: 162px;
         height: 92px;
         left: 20px;
-        top: 138px;
         font-size: 24px;
         line-height: 33px;
     }
@@ -344,7 +347,6 @@ nav .logo {
         font-size: 14px;
     }
 }
-
 /* ¿POR QUE ELEGIR ENMODA? */
 #por_que_elegir_enmoda { 
     max-width: 1440px;
@@ -1037,7 +1039,7 @@ margin-left: 70px;
 .contenedor{
     position: relative;
     top: 0px;
-    max-width: 1200px;
+    max-width: 1440px;
     width: 90%;
     height: 550px;
     /*margin: 5px 25px;*/
@@ -1118,43 +1120,38 @@ margin-left: 70px;
 .carousel__indicadores .glider-dot.active{
     opacity: .9;
 }
+
 @media screen and (max-width: 600px){
     .contenedor{
-        width: 70%;
+
+        width: 430px;
         margin-left: auto;
-        top: 20px;
-        height: 500px;
+        top: 0px;
+        height: 650px;
         margin: auto;
+        padding: 20px;
     }
     .imagenes{
-        position: relative;
-        width: 400px;
-        height: 500px;
+        top: 0px;
+        width: 430px;
+        height:  550px;
     }
     .contenedor .buy-btn {
         position: relative;
-        top: -83px;
+        top: -85px;
+        left: 45px;
         text-align: center;
+
     }
+
 }
 
 @media screen and (max-width: 1160px){
-    .contenedor{
-        width: 70%;
-        margin-left: auto;
-        top: 20px;
-        height: 500px;
-        margin: auto;
-    }
 
-    .contenedor .buy-btn {
-        position: relative;
-        top: -83px;
-        left: auto;
-        text-align: center;
-    }
+
 }
-/* RESEÑAS */
+
+/*RESEÑAS*/
 
 /*caja de comentarios*/
 #reseñas {
