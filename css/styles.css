@@ -1673,3 +1673,250 @@ margin-left: 70px;
 }
 
 /* FOOTER */
+
+.footer {
+    position: relative;
+    max-width: 1440px;
+    height: 430px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background: #1F1F1F;
+}
+
+.footer #titulo-formulario-footer{
+    width: 388px;
+    height: 35px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    margin: auto;
+    color: #FFFFFF;
+    margin-top: 58px;
+}
+
+.footer form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+    max-width: 98%;
+    margin: auto;
+}
+
+.footer form input{
+	padding: 15px;
+	flex: 1;
+    margin-right: 10px;
+	font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 510px;
+    height: 51px;
+    background: #303030;
+    border: none;
+}
+
+.footer form a{
+	font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer form a.btn-footer{
+    color: #fff;
+    border-radius: 5px;
+    background-color: #525252;
+    text-align: center;
+    height: 51px;
+    padding: 13px 54px;
+}
+
+.footer .contacto h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer .contacto{
+    position: relative;
+    justify-content: space-between;
+    height: 90px;
+    max-width: 1440px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer #box-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.footer a{
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 6px;
+}
+
+.footer h2{
+    font-style: bold;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.footer ul{
+    list-style: none;
+    margin-bottom: 0px;
+    margin-left: 0;	
+    padding: 0;
+}
+
+.footer .contacto .redes-sociales ul{
+    display: flex;
+}
+
+footer .contacto .redes-sociales ul li{
+	margin: 0 7px;	
+}
+
+footer .contacto .redes-sociales ul li:first-child{
+	margin-left: 0;	
+}
+
+footer .contacto .redes-sociales ul li:last-child{
+	margin-right: 0;	
+}
+
+.footer .copyright{
+    background-color:  #303030;
+    color: #F3F1F1;
+    width: 100%;
+    max-width: 1440px;
+    height: 45px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    padding: 12px 80px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+    .footer {
+        height: 570px;
+        display: flex;
+        padding: 10px;
+    }
+
+    .footer #titulo-formulario-footer{
+        width: 390px;
+        height: 33px;
+        font-size: 24px;
+        line-height: 33px;
+        margin-top: 35px;
+        padding: 0;
+    }
+
+    .footer .contacto{
+        position: relative;
+        justify-content: space-between;
+        height: 300px;
+        max-width: 1440px;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .footer form input{
+        margin-top: 0px;
+    }
+
+    .footer .contacto .redes-sociales {
+        width: 100%;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer .copyright {
+        padding: 12px 50px;
+    }
+}
+
+@media (max-width: 605px) {
+    .footer {
+        height: 700px;
+        display: flex;
+        padding: 10px;
+    }
+
+    .footer #titulo-formulario-footer{
+        width: 300px;
+        height: 22px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 35px;
+        padding: 0;
+    }
+
+    .footer form input{
+        margin-bottom: 10px;
+    }
+
+    .footer form a.btn-footer{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #525252;
+        text-align: center;
+        height: 51px;
+        padding: 13px 54px;
+        width: 98%;
+        margin-right: 10px;
+    }
+    .footer .contacto{
+        position: relative;
+        justify-content: space-between;
+        height: 380px;
+        max-width: 1440px;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .footer .contacto #box-contacto {
+        width: 150px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+
+    .footer .contacto #box-contacto.redes-sociales {
+        width: 100%;
+        align-items: center;
+        
+        margin-bottom: 30px;
+    }
+
+    .footer .copyright {
+        padding: 12px 30px;
+    }
+}
