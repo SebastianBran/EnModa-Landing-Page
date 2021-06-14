@@ -4,148 +4,244 @@
 
 /* HEADER */
 
-#header {
-    height: 80px;
-    width: 100%;
-    display: flex;
-}
-
-#LogoImage {
-    padding: 5px 5px;
-    margin-left: 35px;
-    width: 45px;
-    height: 45px;
-    top: 20px;
-    left: 30px;
-    position: absolute;
-}
-
-label.logo{
-    color: #000000;
-    font-size: 37px;
-    line-height: 80px;
-    margin-left: 120px;
-    font-weight: bold;
-}
-
-#navegacion {
+nav {
     position: fixed;
     width: 100%;
-    z-index: 10;
-    background-color: white;
-}
+    height: 80px;
 
-nav ul{
-    float: right;
-    margin-right: 200px;
+    background: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
 }
-
-nav ul li{
-    display: inline-block;
-    line-height: 70px;
-}
-
-nav ul li a{
-    text-decoration: none;
+nav .mainMenu {
+    margin: 0;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
     list-style: none;
-    box-sizing: border-box;
-    color: #000000;
+    padding: 20px 20px 0px 20px;
+    margin-right: 270px;
+}
+nav .mainMenu li a {
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    margin: 0px 0px 30px 10px;
+    text-decoration: none;
+    color: #000;
     font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 0; /*navegations*/
-    /*mayus*/
+    opacity: 80%;
 }
-
-.UserIcon{
-    color: #000000;
-    position: absolute;
-    font-size: 50px;
-    padding: 5px 100px;
+nav .mainMenu li a:hover {
+    font-size: 18px;
+    opacity: 120%;
 }
-
-a.active,a:hover{
-    background: #FFFFFF;
-    transition: .5s;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: #7F7F7F;
-    float: left;
-    line-height: 80px;
-    margin-left: 40px;
+nav .openMenu {
+    position: relative;
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
     cursor: pointer;
+}
+nav .UserMenu{
+    position: absolute;
+    top: 10px;
+    right: 115px;
+    font-size: 55px;
+    display:block;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu, .icons i  {
+    font-size: 2rem;
     display: none;
+    cursor: pointer;
+}
+.UserMenu i{
+    display: block;
 }
 
-#checkk{
-    display: none;
+
+nav .logo {
+    margin: 6px;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
 }
+.logoImagen{
 
-@media (max-width: 1320px) {
-    label.logo{
-        font-size: 30px;
-        padding-left: 180px;
-        margin-left: 5px;
-    }
-
-    #LogoImage{
-        margin-left: 350px;
-        padding: 5px 0;
-    }
-
-    nav ul li a{
-        font-size: 16px;
-    }
+    width: 47px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 20px;
 }
+@media(max-width: 1160px){
 
-@media (max-width: 600px) {
-    .checkbtn{
-        display: block;
-    }
-
-    #nav-id{
-        position: fixed;
+    nav {
         width: 100%;
-        height: 100vh;
+        height: 80px;
         background: #ffffff;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
     }
-
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+    .logoImagen{
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        width: 47px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
     }
-
-    nav ul li a{
+    nav .logo {
+        position: absolute;
+        margin: 0px;
+        right: 100px;
+        top: -15px;
         font-size: 20px;
+        cursor: pointer;
+
     }
 
-    a:hover, a.active{
-        background: none;
-        color: #000000;
+    nav .mainMenu {
+        padding: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        transition: top 1s ease;
+        display: none;
+        margin: 0px;
+    }
+    nav .mainMenu .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
     }
 
-    #checkk:checked ~ ul{
-        left: 1px;
+    nav .openMenu {
+        display: block;
     }
 
-    .UserIcon{
-        left: 35px;
-        bottom: 80px;
-        padding: 5px 5px;
+    nav .UserMenu{
+        display: none;
     }
+
+    nav .mainMenu li a {
+        display: block;
+        position: relative;
+        padding:10px ;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        margin: 0px 20px 40px 30px;
+    }
+
+    .icons i{
+        position: absolute;
+        display: inline-block;
+        padding: 0px;
+        margin-right: 0px;
+        left: 20px;
+        font-size: 26px;
+    }
+
 }
+@media(max-width: 600px){
+
+    .logoImagen{
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        width: 47px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+    nav .logo {
+        position: absolute;
+        margin: 0px;
+        right: 100px;
+        top: -20px;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+
+    nav .mainMenu {
+        padding: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        transition: top 1s ease;
+        display: none;
+        margin: 0px;
+    }
+    nav .mainMenu .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .UserMenu{
+        display: none;
+    }
+
+    nav .mainMenu li a {
+        display: block;
+        position: relative;
+        padding:10px ;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        margin: 0px 20px 40px 30px;
+    }
+
+    .icons i{
+
+        position: absolute;
+        display: inline-block;
+        padding: 0px;
+        margin-right: 0px;
+        left: 20px;
+        font-size: 26px;
+    }
+
+}
+
 
 /* HERO PAGE */
 
 .hero {
     position: relative;
     justify-content: center;
+    top:80px;
     max-width: 1440px;
     height: 790px;
     width: 100%;
@@ -937,68 +1033,28 @@ margin-left: 70px;
 
 /* IMAGENES DE ROPA */
 
-.slider{
-    width:100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.box{
-    width:360px;
+.contenedor{
+    position: relative;
+    top: 0px;
+    max-width: 1200px;
+    width: 90%;
     height: 550px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 5px;
-}
+    /*margin: 5px 25px;*/
+    margin: auto;
 
-.slide-img{
-    height: 550px;
+}
+.imagenes{
+    height: 500px;
     width: 360px;
-    position:relative;
+    padding: 0px;
+    margin: 0px;
 }
 
-.slide-img img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    box-sizing: border-box;
-}
-
-.type{
-    display: flex;
-    flex-direction: column;
-}
-
-.type #btn{
-    color:#222222;
-    margin: 5px 0px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    padding-right: 8px;
-}
-
-.type span{
-    color:rgba(26,26,26,0.5);
-}
-
-.overlay{
+.contenedor .buy-btn{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width:100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 220px;
-    align-items: center;
-
-}
-
-.buy-btn{
+    top: 430px;
+    margin-left: 86px;
     text-decoration: none;
     width:140px;
     height: 40px;
@@ -1010,34 +1066,94 @@ margin-left: 70px;
     font-weight: 700;
     letter-spacing: 1px;
     border-radius: 5px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 }
-
 .buy-btn:hover{
     color:#FFFFFF;
     background-color:#F8D71B;
     transition: all ease 0.3s;
 }
 
-.overlay{
-    visibility: hidden;
+.carousel__contenedor{
+    position: relative;
+}
+.carousel__anterior,
+.carousel__siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #000000;
+    opacity: 20%;
+}
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+    opacity: 100%;
 }
 
-.slide-img:hover .overlay{
-    visibility: visible;
-    animation:fade 0.5s;
+.carousel__anterior{
+    left: -30px;
+}
+.carousel__siguiente{
+    right: -30px;
+}
+.carousel__lista{
+    overflow: hidden;
+}
+.carousel__indicadores .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #111111;
+    border-radius: 0;
+}
+.carousel__indicadores .glider-dot:hover{
+    opacity: 1;
+}
+.carousel__indicadores .glider-dot.active{
+    opacity: .9;
+}
+@media screen and (max-width: 600px){
+    .contenedor{
+        width: 70%;
+        margin-left: auto;
+        top: 20px;
+        height: 500px;
+        margin: auto;
+    }
+    .imagenes{
+        position: relative;
+        width: 400px;
+        height: 500px;
+    }
+    .contenedor .buy-btn {
+        position: relative;
+        top: -83px;
+        text-align: center;
+    }
 }
 
-@keyframes fade{
-    0%{
-        opacity: 0;
+@media screen and (max-width: 1160px){
+    .contenedor{
+        width: 70%;
+        margin-left: auto;
+        top: 20px;
+        height: 500px;
+        margin: auto;
     }
 
-    100%{
-        opacity: 1;
+    .contenedor .buy-btn {
+        position: relative;
+        top: -83px;
+        left: auto;
+        text-align: center;
     }
 }
-
 /* RESEÑAS */
 
 /*caja de comentarios*/
